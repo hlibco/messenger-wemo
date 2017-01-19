@@ -1,0 +1,17 @@
+{
+  "ignore": [
+    ".git",
+    "node_modules"
+  ],
+  "verbose": false,
+  "watch": [
+    "src"
+  ],
+  "env": {
+    "NODE_ENV": "development",
+    "WMBOT_PORT": "5000",
+    "DEBUG": "messenger-wemo:*",
+    "DEBUG_COLORS": true
+  },
+  "exec": "node src/server.js"
+}

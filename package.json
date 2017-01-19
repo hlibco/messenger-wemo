@@ -1,0 +1,41 @@
+{
+  "name": "messenger-wemo",
+  "version": "0.1.0",
+  "description": "Toggle Wemo switches via Facebook Messenger Platform",
+  "author": "Felipe Hlibco",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hlibco/messenger-wemo.git"
+  },
+  "engines": {
+    "node": "4.1.2"
+  },
+  "main": "./src/server.js",
+  "scripts": {
+    "lint": "standard --verbose src/**/*.js | snazzy",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon",
+    "production": "pm2 reload process.json --env production"
+  },
+  "standard": {
+    "ignore": [
+      "/src/boilerplate"
+    ]
+  },
+  "dependencies": {
+    "body-parser": "1.15.0",
+    "confidence": "3.0.2",
+    "debug": "2.6.0",
+    "dotenv": "2.0.0",
+    "ejs": "2.4.2",
+    "express": "4.13.4",
+    "request": "2.72.0",
+    "wemo-client": "0.11.2"
+  },
+  "devDependencies": {
+    "nodemon": "1.11.0",
+    "snazzy": "5.0.0",
+    "standard": "8.6.0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "apps" : [
+    {
+      "name"       : "messenger-wemo",
+      "script"     : "./src/server.js",
+      "watch"      : false,
+      "instances"  : "1",
+      "exec_mode"  : "cluster",
+      "max_memory_restart" : "1G",
+      "max_restarts": "20",
+      "kill_timeout": "1800",
+      "listen_timeout": "2000",
+      "wait_ready" : false,
+      "env": {
+        "NODE_ENV": "development",
+        "WMBOT_PORT": "5000",
+        "DEBUG": "messenger-wemo:*",
+        "DEBUG_COLORS": true
+      },
+      "env_production" : {
+         "NODE_ENV": "production",
+         "WMBOT_PORT": "5000",
+         "DEBUG": "messenger-wemo:*",
+         "DEBUG_COLORS": true
+      }
+    }
+  ]
+}

@@ -14,7 +14,7 @@ The main goal is to change the binary state of a specific Wemo switch. In other 
 
 It's possible to add as many Wemo devices as you want. It's required that the server is in the same WiFi newtwork the devices are connected.
 
-This project is based on the sample [Messenger Platform](https://github.com/fbsamples/messenger-platform-samples.git)
+This project is based on [this sample](https://github.com/fbsamples/messenger-platform-samples.git) for Messenger Platform provided by Facebook.
 
 Some files provided by the original project have been moved to `/boilerplate` and can be used if needed.
 
